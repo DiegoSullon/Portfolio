@@ -4,6 +4,7 @@
   "description": "Personal projects portfolio",
   "main": "index.js",
   "scripts": {
+    "vercel-build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "dev": "webpack server"
