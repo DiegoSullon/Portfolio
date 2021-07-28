@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import { ProjectGroup, ProjectTitle, ProjectTitleImg, ProjectTitleText, Technologies, TechnologiesImg, TechnologiesItem } from './styles'
 
@@ -7,11 +6,11 @@ const ProjectCard = () => {
     <ProjectGroup>
       <ProjectTitle>
         <ProjectTitleText>BodyHealthy</ProjectTitleText>
-        <a href='https://github.com/PedigreeTeam/BodyHealthy' target='_blank'>
+        <a href='https://github.com/PedigreeTeam/BodyHealthy' target='_blank' rel='noopener noreferrer'>
           <ProjectTitleImg src='https://i.ibb.co/84zSfWQ/git.png' alt='git icon' />
         </a>
       </ProjectTitle>
-      <a href='https://bodyhealthy-app.herokuapp.com/' target='_blank'>
+      <a href='https://bodyhealthy-app.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
         <img
           className='project-image'
           src='https://i.ibb.co/QMbxDZF/bodyhealthy.png'
