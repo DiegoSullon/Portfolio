@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -8,7 +9,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: 'src/index.html', favicon: './src/assets/img/DS.ico' })
+    new FaviconsWebpackPlugin({
+      logo: './src/assets/img/DS.png',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({ template: 'src/index.html', favicon: './src/assets/img/DS.png' })
   ],
   module: {
     rules: [
