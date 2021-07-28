@@ -12,7 +12,6 @@ export const BannerSection = styled.section`
 `
 export const BannerImage = styled.img`
   height: 100%;
-  /* width: 100%; */
 `
 export const BannerInfo = styled.div`
   display: flex;

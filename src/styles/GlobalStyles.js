@@ -32,4 +32,8 @@ export const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 2.5rem;
   }
+  img {
+    width: 100%;
+    height: auto;
+  }
 `
