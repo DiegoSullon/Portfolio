@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: 'src/index.html' })
+    new HtmlWebpackPlugin({ template: 'src/index.html', favicon: './src/assets/img/DS.ico' })
   ],
   module: {
     rules: [
