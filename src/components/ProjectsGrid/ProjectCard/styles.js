@@ -21,6 +21,17 @@ export const ProjectTitleImg = styled.img`
   height: 1.8em;
   margin-top: 2px;
 `
+export const ProjectImg = styled.img`
+  @media (min-width: 700px) {
+    height: 250px;
+  }
+  @media (min-width: 1000px) {
+    height: 300px;
+  }
+  @media (min-width: 1200px) {
+    height: 400px;
+  }
+`
 export const ProjectTitleText = styled.h3`
   margin: 0;
   padding: 0.8rem;

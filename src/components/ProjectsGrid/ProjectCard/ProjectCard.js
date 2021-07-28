@@ -1,32 +1,27 @@
 import React from 'react'
-import { ProjectGroup, ProjectTitle, ProjectTitleImg, ProjectTitleText, Technologies, TechnologiesImg, TechnologiesItem } from './styles'
+import { ProjectGroup, ProjectImg, ProjectTitle, ProjectTitleImg, ProjectTitleText, Technologies, TechnologiesImg, TechnologiesItem } from './styles'
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
+  const { name, links, image, technologies } = project
   return (
     <ProjectGroup>
       <ProjectTitle>
-        <ProjectTitleText>BodyHealthy</ProjectTitleText>
-        <a href='https://github.com/PedigreeTeam/BodyHealthy' target='_blank' rel='noopener noreferrer'>
+        <ProjectTitleText>{name}</ProjectTitleText>
+        <a href={links.github} target='_blank' rel='noopener noreferrer'>
           <ProjectTitleImg src='https://i.ibb.co/84zSfWQ/git.png' alt='git icon' />
         </a>
       </ProjectTitle>
-      <a href='https://bodyhealthy-app.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
-        <img
-          className='project-image'
-          src='https://i.ibb.co/QMbxDZF/bodyhealthy.png'
+      <a href={links.website} target='_blank' rel='noopener noreferrer'>
+        <ProjectImg
+          className='project-card-image'
+          src={image}
           alt='project image'
         />
       </a>
       <Technologies>
-        <TechnologiesItem>
-          <TechnologiesImg
-            src='https://i.ibb.co/dk3ymmV/angular-logo-icon-169595.png'
-            alt=''
-          />
-        </TechnologiesItem>
-        <TechnologiesItem><TechnologiesImg src='https://i.ibb.co/TkFrtJy/spring-logo.png' alt='' /></TechnologiesItem>
-        <TechnologiesItem><TechnologiesImg src='https://i.ibb.co/1YNQ1Hz/jwt.png' alt='' /></TechnologiesItem>
-        <TechnologiesItem><TechnologiesImg src='https://i.ibb.co/68qC0cF/cloudinary.png' alt='' /></TechnologiesItem>
+        {technologies && Array.isArray(technologies) && technologies.map((tech, i) => (
+          <TechnologiesItem key={i}><TechnologiesImg src={tech.icon} alt={tech.name} /></TechnologiesItem>
+        ))}
       </Technologies>
     </ProjectGroup>
   )
