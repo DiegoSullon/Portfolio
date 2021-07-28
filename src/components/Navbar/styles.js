@@ -7,6 +7,7 @@ export const Nav = styled.nav`
   justify-content: center;
   position: fixed;
   top: 0;
+  z-index: 10;
 `
 export const NavLinks = styled.ul`
   padding: 0;

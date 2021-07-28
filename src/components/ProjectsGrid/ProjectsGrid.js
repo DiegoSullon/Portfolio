@@ -4,7 +4,7 @@ import { ProjectsHeader, ProjectsSection } from './styles'
 
 const ProjectsGrid = () => {
   return (
-    <ProjectsSection>
+    <ProjectsSection id='projects'>
       <ProjectsHeader>These are some of my projects</ProjectsHeader>
       <ProjectCard />
       <ProjectCard />

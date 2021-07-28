@@ -3,7 +3,7 @@ import { ContactHeader, ContactLinks, ContactSection, ContactSubtitle, ProfileIm
 
 const Contact = () => {
   return (
-    <ContactSection>
+    <ContactSection id='contact'>
       <ContactHeader>Let's work together...</ContactHeader>
       <ContactSubtitle>You can find me in the following links</ContactSubtitle>
       <ContactLinks>

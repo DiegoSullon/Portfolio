@@ -36,4 +36,8 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: auto;
   }
+  /* Nav scroll */
+  .bgcolor {
+    background-color: rgba(15, 71, 97, 0.8);
+  }
 `

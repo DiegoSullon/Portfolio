@@ -3,7 +3,7 @@ import { BannerHeader, BannerImage, BannerInfo, BannerSection, BannerSubtitle } 
 
 const Banner = () => {
   return (
-    <BannerSection>
+    <BannerSection id='about'>
       <BannerImage
         src='https://i.ibb.co/5WR9YCJ/pexels-tobias-bj-rkli-1693095-1.jpg'
         alt=''
